@@ -16,16 +16,7 @@ public class ChatController {
     public String saveForm() {
         return "save-form";
     }
-    @GetMapping("/")
-    public String index(Model model) {
-        model.addAttribute("models",chatService.findAll());
-        return "index";
-    }
-    @GetMapping("/v2")
-    public String indexV2(Model model) {
-        model.addAttribute("models",chatService.findAll());
-        return "index";
-    }
+
     @GetMapping("/v3")
     public String indexV3(Model model) {
         model.addAttribute("models",chatService.findAll());
